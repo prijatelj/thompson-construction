@@ -178,7 +178,8 @@ public class Thompson{
 
         // copy existing transisitons of m
         for (Trans t: m.transitions){
-            result.transitions.add(new Trans(t.state_from + n.states.size()                 + 1, t.state_to + n.states.size() + 1, t.trans_symbol));
+            result.transitions.add(new Trans(t.state_from + n.states.size()
+                + 1, t.state_to + n.states.size() + 1, t.trans_symbol));
         }
         
         // transition from last m to final state
